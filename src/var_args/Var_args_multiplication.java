@@ -10,6 +10,7 @@ public class Var_args_multiplication {
 	
 	/*var args method for multiplication*/
 	public int multiply(int...x) {
+		
 		for(int i : x) {		
 			 mult = mult * i;
 			
@@ -20,7 +21,7 @@ public class Var_args_multiplication {
 	/*main method*/
 	public static void main(String[] args) {
 		
-		/*creating a class*/
+		/*creating an object of a class*/
 		Var_args_multiplication object = new Var_args_multiplication();
 		
 		/*displaying the results*/
