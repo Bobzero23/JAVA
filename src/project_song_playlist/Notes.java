@@ -36,5 +36,13 @@ package project_song_playlist;
  * gonna have to start it at zero by saying int index = trackNumber - 1;
  * +check if index is greater than zero and greater or equal to size of songs
  * we know songs is our arraylist so is our album I guess
+ * 
+ * if we have an arralist we can add object and its created properties togeter
+ * by just adding the object to the arraylists the same way we added album to the playlist
+ * 
+ * 
+ * 
  * */
+
+
  
