@@ -1,2 +1,3 @@
 # JAVA
-This is my first language and in this project there are some of what I have done with it...
+MY FIRST PROGRAMMING LANGUAGE
+I AM GLAD TO LET YOU SEE SOME OF WHAT I HAVE DONE WITH IT
