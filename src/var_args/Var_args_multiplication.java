@@ -10,6 +10,7 @@ public class Var_args_multiplication {
 	
 	/*var args method for multiplication*/
 	public int multiply(int...x) {
+		
 		for(int i : x) {		
 			 mult = mult * i;
 			
