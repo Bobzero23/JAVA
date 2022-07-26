@@ -1,4 +1,4 @@
-package gui_lable;
+package gui_label;
 		/*LABEL = a GUI display area for a string of text, an image or both..*/
 
 /*importing required classes*/
