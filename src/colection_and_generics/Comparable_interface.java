@@ -48,9 +48,9 @@ public class Comparable_interface {
 		List<Stud> studs = new ArrayList<Stud>();
 		
 		/*passing some values to the list*/
-		studs.add(new Stud(1, "Ruwayla", 86));
-		studs.add(new Stud(2, "Rajabu", 90));
-		studs.add(new Stud(3, "PrincessButterfly", 80));
+		studs.add(new Stud(1, "John", 86));
+		studs.add(new Stud(2, "Wonder", 90));
+		studs.add(new Stud(3, "TheProblem", 80));
 		studs.add(new Stud(4, "Bobzero", 95));
 		
 		/*lets try to sort them*/
