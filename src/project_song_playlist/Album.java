@@ -13,7 +13,7 @@ public class Album {
 	private ArrayList<Song> songs;
 	
 	/*constructor and initialization*/
-	public Album(String name, String artist, ArrayList<Song> songs) {
+	public Album(String name, String artist) {
 	
 		this.name = name;
 		this.artist = artist;
@@ -63,8 +63,16 @@ public class Album {
 	
 	/*this method takes title as an input and */
 	/*adding a song to a plyalist */ /*checking if the song is in album or not*/
-	public boolean addToPlaylist() {
-		
+	public boolean addToPlaylist(String title, LinkedList<Song> PlayList) {
+		for (Song checkedSong : this.songs) {
+			if (checkedSong.getTitle().equals(title)) {
+				PlayList.add(checkedSong);
+				return true;
+			}
+			
+		}
+		System.out.println("The album doesnt have a song with track number " + title);
+		return false;
 	}
 }
 
