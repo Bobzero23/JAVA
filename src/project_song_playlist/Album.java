@@ -1,7 +1,8 @@
 package project_song_playlist;
 
 /*must imports*/
-import java.util.ArrayList;
+import java.util.*;
+
 
 /*album class*/
 public class Album {
@@ -45,6 +46,26 @@ public class Album {
 		}
 	}
 	
+	/*this method takes tracker number as an input*/
+	/*adding a song to a plyalist */ /*checking if the song is in album or not*/
+	public boolean addToplaylist(int trackNumber, LinkedList<Song> PlayList) {
+		
+		int index = trackNumber - 1;
+		if (index > 0 && index <= this.songs.size()) {
+			PlayList.add(this.songs.get(index));
+			return true;
+		}
+		else {
+			System.out.println("The album doesnt have a song with track number " + trackNumber);
+			return false;
+		}
+	}
 	
-	
+	/*this method takes title as an input and */
+	/*adding a song to a plyalist */ /*checking if the song is in album or not*/
+	public boolean addToPlaylist() {
+		
+	}
 }
+
+
