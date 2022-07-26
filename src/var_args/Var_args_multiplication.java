@@ -20,7 +20,7 @@ public class Var_args_multiplication {
 	/*main method*/
 	public static void main(String[] args) {
 		
-		/*creating a class*/
+		/*creating an object of a class*/
 		Var_args_multiplication object = new Var_args_multiplication();
 		
 		/*displaying the results*/
