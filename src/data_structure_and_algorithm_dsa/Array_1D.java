@@ -1,4 +1,4 @@
-package data_structure_and_algorithm;
+package data_structure_and_algorithm_dsa;
 
 public class Array_1D {
 
