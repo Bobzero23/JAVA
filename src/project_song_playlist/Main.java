@@ -136,12 +136,12 @@ public class Main {
 	private static void printMenu() {
 		System.out.println("AVAILABLE OPTIONS: \n press");
 		System.out.println("0 - to quit \n" 
-						+ "1 - to play the next song \n" 
-						+ "2 - to play the previous song\n"
-						+ "3 - to replay the current song\n" 
-						+ "4 - list of all available songs\n"
-						+ "5 - to print all available song\n" 
-						+ "6 - to delete the song ");
+					+ "1 - to play the next song \n" 
+					+ "2 - to play the previous song\n"
+					+ "3 - to replay the current song\n" 
+					+ "4 - list of all available songs\n"
+					+ "5 - to print all available song\n" 
+					+ "6 - to delete the song ");
 	}	
 
 	/* method to display the song list to the user */
