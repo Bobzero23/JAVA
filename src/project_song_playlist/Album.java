@@ -8,7 +8,9 @@ import java.util.*;
 public class Album {
 	
 	/*album properties*/
+	@SuppressWarnings("unused")
 	private String name;
+	@SuppressWarnings("unused")
 	private String artist;
 	private ArrayList<Song> songs;
 	
@@ -38,7 +40,6 @@ public class Album {
 		/*if the song doesnt exist add*/
 		if(findSong(title) == null) {
 			songs.add(new Song(title, duration));
-			System.out.println(title + " is successfully added to the Album.");
 			return true;
 		}else {
 			System.out.println(title + " is already exist.");	
@@ -71,7 +72,7 @@ public class Album {
 			}
 			
 		}
-		System.out.println("The album doesnt have a song with track number " + title);
+		System.out.println("The album doesnt have a song with name " + title);
 		return false;
 	}
 }

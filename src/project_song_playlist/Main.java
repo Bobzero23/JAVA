@@ -26,8 +26,8 @@ public class Main {
 		/* adding songs to the album */
 		object.addSong("Clouds", 4.5);
 		object.addSong("That's  a joke", 4.0);
-		object.addSong("Turst", 3.5);
-		object.addSong("Clouds", 3.9);
+		object.addSong("Trust", 3.5);
+
 
 		/* adding the Clouds album to our album */
 		albums.add(object);
@@ -70,7 +70,7 @@ public class Main {
 		if (playList.size() == 0) {
 			System.out.println("You dont have a song in your playlist..");
 		} else {
-			System.out.println("Now playing " + listIterator.next().toString());
+			System.out.println("\nNow playing " + listIterator.next().toString());
 			printMenu();
 		}
 
@@ -81,11 +81,11 @@ public class Main {
 			switch (action) {
 
 			case 0:
-				System.out.println("Playlist complete..");
+				System.out.println("\nThanks for choosing our app..");
 				quit = true;
 				break;
 				
-
+				/*if user type 1, it will go to the next song */
 			case 1 :
 				if (!forward) {
 					if (listIterator.hasNext()) {
@@ -94,13 +94,14 @@ public class Main {
 					forward = true;
 				}
 				if (listIterator.hasNext()) {
-					System.out.println("Now playing " + listIterator.next().toString());
+					System.out.println("\nNow playing " + listIterator.next().toString());
 				} else {
-					System.out.println("No next song available to paly..");
+					System.out.println("\nNo next song available to paly..");
 				}
 				break;
 				
-				
+
+				/*if user type 2, it will go to the next song*/
 			case 2 :
 				if (forward) {
 					if (listIterator.hasPrevious()) {
@@ -109,22 +110,62 @@ public class Main {
 					forward = false;
 				}
 				if(listIterator.hasPrevious()) {
-					System.out.println("Now playing " + listIterator.previous().toString());
+					System.out.println("\nNow playing " + listIterator.previous().toString());
 				}else {
-					System.out.println("No previous song available to play..");
+					System.out.println("\nNo previous song available to play..");
 					forward = false;
 				}
 				break;
 				
-				
+
+				/*if user type 4, it will replay song*/
 			case 3 :
 				if(forward) {
 					if(listIterator.hasPrevious()) {
 						listIterator.previous();
-						System.out.println("Repalying " + listIterator.next().toString());
+						System.out.println("Repalying " + listIterator.previous().toString());
 						forward = false;
+					}else {
+						System.out.println("We're at the start of the Playlist..");
+					}
+				}else {
+					if(listIterator.hasNext()) {
+						System.out.println("Now playing " + listIterator.next().toString());
+						forward = true;
+					}else {
+						System.out.println("We're at the end of the Playlist..");
 					}
 				}
+				break;
+
+				
+				/*thisif user type 4,  will call the printList method*/
+			case 4 : 
+				printList(playList);
+				break;
+			
+				
+				/*if user type 5, it will display the option menu*/
+			case 5 : 
+				printMenu();
+				break;
+			
+				
+				/*if user type 6, it will deleta and play the next song if is availalbe
+				 * if not it available it will play the previous song*/
+			case 6 : 
+				if(playList.size() > 0) {
+					if(listIterator.hasNext()) {
+						System.out.println("\nNow playing \n" + listIterator.next().toString());
+					}else {
+						if(listIterator.hasPrevious()) {
+							System.out.println("\nNow playing \n" + listIterator.previous().toString());
+						}else {
+							System.out.println("\nThere is no song availble in your playlist.. \n");
+						}
+					}
+				}
+			
 			}
 		}
 
@@ -134,7 +175,7 @@ public class Main {
 
 	/* method to display the menu */
 	private static void printMenu() {
-		System.out.println("AVAILABLE OPTIONS: \n press");
+		System.out.println("\n\nAVAILABLE OPTIONS: \npress");
 		System.out.println("0 - to quit \n" 
 					+ "1 - to play the next song \n" 
 					+ "2 - to play the previous song\n"
