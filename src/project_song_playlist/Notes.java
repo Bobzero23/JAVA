@@ -42,6 +42,9 @@ package project_song_playlist;
  * 
  * albums.get(0) zero represents that is gonna be the first index of linked list
  * 
+ * listIterator.next().toString   bcoz the list iterator is an object so we cast to string
+ * 
+ * 
  * */
 
 
