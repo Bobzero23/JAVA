@@ -40,7 +40,7 @@ package project_song_playlist;
  * if we have an arralist we can add object and its created properties togeter
  * by just adding the object to the arraylists the same way we added album to the playlist
  * 
- * 
+ * albums.get(0) zero represents that is gonna be the first index of linked list
  * 
  * */
 

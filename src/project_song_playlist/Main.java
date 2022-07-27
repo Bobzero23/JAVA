@@ -40,13 +40,45 @@ public class Main {
 		
 		
 		/*creating a LinkedList*/ /*refers a playlist*/
-		LinkedList <Song> playList1 = new LinkedList<>();
+		LinkedList <Song> playList_1 = new LinkedList<>();
 		
-		/*adding some songs to the playlist*/
-		albums.get(0).addToPlaylist("Clouds", playList1);
-		albums.get(0).addToPlaylist("Trust", playList1);
-		albums.get(1).addToPlaylist("Nate", playList1);
-		albums.get(1).addToPlaylist("Change", playList1);
+		
+		/*adding some songs to the playlist*//*for the second playlist*/
+		albums.get(0).addToPlaylist("Clouds", playList_1);
+		albums.get(0).addToPlaylist("Trust", playList_1);
+		
+		/*adding some songs to the playlist*//*for the second playlist*/
+		albums.get(1).addToPlaylist("Nate", playList_1);
+		albums.get(1).addToPlaylist("Change", playList_1);
+		
+		/*playing the song*/
+		play(playList_1);
 		
 	}
+
+	/*a method to play a song*/
+	private static void play(LinkedList<Song> playList) {
+		
+	}
+
+	/*method to display the menu*/
+	private static void printMenu() {
+		System.out.println("AVAILABLE OPTIONS: \n press");
+		System.out.println("0 - to quit \n"
+				+ "1 - to play the next song \n"
+				+ "2 - to play the previous song\n"
+				+ "3 - to replay the current song\n"
+				+ "4 - list of all available songs\n"
+				+ "5 - to print all available song\n"
+				+ "6 - to delete the song ");
+	}
+	
+	/*method to display the song list to the user*/
+	private static void printList(LinkedList<Song> playList) {
+		
+		/*we use iterator to loop through the linkedlist*/
+		
+	}
+	
+
 }
