@@ -18,7 +18,7 @@ public class Time {
 		System.out.println(object);
 		
 		/*this one will give whatever you want depends on the parameters*/
-		SimpleDateFormat sdf = new SimpleDateFormat("Y");
+		SimpleDateFormat sdf = new SimpleDateFormat("G");
 		System.out.println(sdf.format(object));
 		
 	}
