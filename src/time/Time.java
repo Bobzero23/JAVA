@@ -1,5 +1,7 @@
 package time;
 
+import java.text.SimpleDateFormat;
+
 /*HERE WE GONNA SEE HOW TO GET THE DATE AND TIME AND ALL OF THAT KINDA STUFFS*/
 
 /*must imports*/
@@ -12,10 +14,13 @@ public class Time {
 	public static void main(String[] args) {
 
 		/*this object will display the full date and time */
-		Date fullDate = new Date();
+		Date object = new Date();
+		System.out.println(object);
 		
-		/*displaying resutls*/
-		System.out.println(fullDate);
+		/*this one will give whatever you want depends on the parameters*/
+		SimpleDateFormat sdf = new SimpleDateFormat("Y");
+		System.out.println(sdf.format(object));
+		
 	}
 
 }
