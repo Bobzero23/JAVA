@@ -11,26 +11,50 @@ public class tic_tac_toe {
 	/*main method*/
 	public static void main(String[] args) {
 
-		/*using 2D array to create a gameboard*/
-		char [][] gameBoard = {{' ', '|', ' ', '|'},
-				{'-', '+', '-', '+', '-'}, 
-				{' ', '|', ' ', '|'}, 
-				{'-', '+', '-', '+', '-'}, 
-				{' ', '|', ' ', '|'}};
 		
-		/*calling the print_game_board method*/
-		print_game_board(gameBoard);
+			
+			/*creating the scanner object*/
+			Scanner playerPosition = new Scanner(System.in);
+			
+			/*using 2D array to create a gameboard*/
+			char [][] gameBoard = {{' ', '|', ' ', '|', ' '},
+					{'-', '+', '-', '+', '-'}, 
+					{' ', '|', ' ', '|', ' '}, 
+					{'-', '+', '-', '+', '-'}, 
+					{' ', '|', ' ', '|', ' '}};
+			
+			/*this will print the gameBoar at the beggining*/
+			print_game_board(gameBoard);
+			
+			/*the program will ask for input until the game is over*/
+			while(true) {
+
+				/*asking for the user input*/
+				System.out.println("\nEnter your replacement (1-9) : ");
+				int position = playerPosition.nextInt();
+				
+				/*first we put the choice*/
+				place_piece(gameBoard, position, "Player");
+			
+			
+				/*here we create Random class fot the computer to play*/
+				Random random = new Random();
+				/*this will randomize from 1 - 9*/
+				int computerPosition = random.nextInt(9) + 1;
+			
+				/*computer's position*/
+				place_piece(gameBoard, computerPosition, "Computer");
+				
+				/*then we display the board accoridingly*/
+				print_game_board(gameBoard);
+			    /*just leaving some spacee*/
+				System.out.println("\n");
+				
+			}
+
+			
 		
-		/*creating the scanner object*/
-		Scanner scan = new Scanner(System.in);
-		
-		/*asking for the user input*/
-		System.out.println("\nEnter your replacement (1-9) : ");
-		int position = scan.nextInt();
 	
-
-		print_game_board(gameBoard);
-
 	}
 	
 	/*method to call the gameboard*/
@@ -106,7 +130,7 @@ public class tic_tac_toe {
 			
 
 		case 9 : 
-			gameBoard[0][0] = symbol;
+			gameBoard[4][4] = symbol;
 			break;
 		
 		}
