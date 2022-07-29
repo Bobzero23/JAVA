@@ -12,12 +12,13 @@ public class tic_tac_toe {
 	static ArrayList<Integer> ComputerPositions = new ArrayList<>();
 
 	/*main method*/
+	@SuppressWarnings({ "unlikely-arg-type", "resource" })
 	public static void main(String[] args) {
 
 		
 			
 			/*creating the scanner object*/
-			Scanner playerPosition = new Scanner(System.in);
+			Scanner scan = new Scanner(System.in);
 			
 			/*using 2D array to create a gameboard*/
 			char [][] gameBoard = {{' ', '|', ' ', '|', ' '},
@@ -34,32 +35,36 @@ public class tic_tac_toe {
 
 				/*asking for the user input*/
 				System.out.println("\nEnter your replacement (1-9) : ");
-				int position = playerPosition.nextInt();
+				int position = scan.nextInt();
 				/*avoiding to retake the taken positions*/
 				while(PlayerPositions.contains(position) || ComputerPositions.contains(PlayerPositions)) {
 					System.out.println("Wrong replacement, Enter the replacement again");
-					position = playerPosition.nextInt();
+					position = scan.nextInt();
 				}
 				
 				/*first we put the choice*/
 				place_piece(gameBoard, position, "Player");
-			
+				
+				/*checking result*/
+				String result = checkWinner();
+				if(result.length() > 0) {
+					System.out.println(result);
+					break;
+				}
+				
 			
 				/*here we create Random class fot the computer to play*/
 				Random random = new Random();
 				/*this will randomize from 1 - 9*/
 				int computerPosition = random.nextInt(9) + 1;
-				while(PlayerPositions.contains(position) || ComputerPositions.contains(PlayerPositions)) {
+				while(PlayerPositions.contains(computerPosition) || ComputerPositions.contains(computerPosition)) {
 					System.out.println("Wrong replacement, Enter the replacement again");
-					position = playerPosition.nextInt();
 		
 					/*this will randomize from 1 - 9*/
 					computerPosition = random.nextInt(9) + 1;
-					
+
 				}
 		
-				
-				
 				/*computer's position*/
 				place_piece(gameBoard, computerPosition, "Computer");
 				
@@ -70,13 +75,12 @@ public class tic_tac_toe {
 				
 				
 				/*checking and displaying the winner*/
-				String result = checkWinner();
-				System.out.println(result);
+				if(result.length() > 0) {
+					System.out.println(result);
+					break;
+				}
 				
 			}
-
-			
-		
 	
 	}
 	
