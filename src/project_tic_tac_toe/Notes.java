@@ -11,6 +11,11 @@
  * code keeps asking for the input nad I also have to  decide when 
  * to stop placing pieces for that is when someone win or a if there is a draw
  * in shor Imma use while loop for that ...
+ * 
+ * inside checkWinner method we coded the winning conditions and put them into the list
+ * but we gonna have to loop through all the list we created and to avoid that 
+ * we created a global lists in the class so that way is easy, yeah we created two
+ * Arraylist one for the player and the other is for the computer
  *
  */
  

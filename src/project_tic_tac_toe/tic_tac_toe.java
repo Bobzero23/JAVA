@@ -7,6 +7,9 @@ import java.util.*;
 
 /*main class*/
 public class tic_tac_toe {
+	
+	static ArrayList<Integer> PlayerPositions = new ArrayList<>();
+	static ArrayList<Integer> ComputerPositions = new ArrayList<>();
 
 	/*main method*/
 	public static void main(String[] args) {
@@ -32,6 +35,11 @@ public class tic_tac_toe {
 				/*asking for the user input*/
 				System.out.println("\nEnter your replacement (1-9) : ");
 				int position = playerPosition.nextInt();
+				/*avoiding to retake the taken positions*/
+				while(PlayerPositions.contains(position) || ComputerPositions.contains(PlayerPositions)) {
+					System.out.println("Wrong replacement, Enter the replacement again");
+					position = playerPosition.nextInt();
+				}
 				
 				/*first we put the choice*/
 				place_piece(gameBoard, position, "Player");
@@ -41,7 +49,17 @@ public class tic_tac_toe {
 				Random random = new Random();
 				/*this will randomize from 1 - 9*/
 				int computerPosition = random.nextInt(9) + 1;
-			
+				while(PlayerPositions.contains(position) || ComputerPositions.contains(PlayerPositions)) {
+					System.out.println("Wrong replacement, Enter the replacement again");
+					position = playerPosition.nextInt();
+		
+					/*this will randomize from 1 - 9*/
+					computerPosition = random.nextInt(9) + 1;
+					
+				}
+		
+				
+				
 				/*computer's position*/
 				place_piece(gameBoard, computerPosition, "Computer");
 				
@@ -49,6 +67,11 @@ public class tic_tac_toe {
 				print_game_board(gameBoard);
 			    /*just leaving some spacee*/
 				System.out.println("\n");
+				
+				
+				/*checking and displaying the winner*/
+				String result = checkWinner();
+				System.out.println(result);
 				
 			}
 
@@ -76,12 +99,16 @@ public class tic_tac_toe {
 		
 		/*declaring a variable for symbol*/
 		char symbol = 'X';
-		
+
 		/*classifying robot and player*/
 		if(user.equals("Player")) {
 			symbol = 'X';	
+			/*addig position to arraylist*/
+			PlayerPositions.add(position);
 		}else {
 			symbol = 'O';
+			/*addig position to arraylist*/
+			ComputerPositions.add(position);
 		}
 		
 		/*now to work with user input*/
@@ -137,8 +164,44 @@ public class tic_tac_toe {
 	}
 	
 	/*a method to check the winner*/
+	@SuppressWarnings("rawtypes")
 	public static String checkWinner() {
+		
+		/*winning conditions*/
 		List TopRow = Arrays.asList(1, 2, 3);
+		List MidRow = Arrays.asList(4, 5, 6);
+		List BottomRow = Arrays.asList(7, 8, 9);
+		List RightColumn = Arrays.asList(1, 4, 7);
+		List MidColumn = Arrays.asList(2, 5, 8);
+		List LeftColumn = Arrays.asList(3, 6, 9);
+		List Cross1 = Arrays.asList(1, 5, 9);
+		List Cross2 = Arrays.asList(7, 5, 3);
+
+		/*creating a list which we gonna add all the above conditions*/
+		/*instead of iterating all the lists above so that we
+		 * will only iterate this one list here*/
+		List<List> Winning = new ArrayList<>();
+		Winning .add(TopRow);
+		Winning.add(MidRow);
+		Winning.add(BottomRow);
+		Winning.add(RightColumn);
+		Winning.add(MidColumn);
+		Winning.add(LeftColumn);
+		Winning.add(Cross1);
+		Winning.add(Cross2);
+		
+		/*now iterating the list*/
+		for(List L : Winning) {
+			if(PlayerPositions.containsAll(L)) {
+				return "Congratulations you win!!";
+			}else if(ComputerPositions.containsAll(L)) {
+				return "Sorry! Better luck next time..";
+			}else if(ComputerPositions.size() + PlayerPositions.size() == 9) {
+				return "CAT!";
+			}
+		}
+		
+		
 		return "";
 	}
 
