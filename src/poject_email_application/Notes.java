@@ -11,7 +11,7 @@ package poject_email_application;
  * we said privat String or we used encapsulation bcoz we didnt want the user to acces them
  *
  * so it is possible to have a method with String return type and int parameter
- *
+ * 
  *
  *
  */

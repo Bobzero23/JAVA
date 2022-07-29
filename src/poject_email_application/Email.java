@@ -61,7 +61,7 @@ public class Email {
 		System.out.println("\n\nDEPARTMENT CODES \n1 for sales \n2 for development"
 				+ "\n3 for accounting \n0 for none \nEnter department code: s");
 		/*creating the scanner*/
-		Scanner scan = new Scanner (System.in);
+		Scanner scan = new Scanner (System.in); 
 		int choice = scan.nextInt();
 		
 		/*conditons for the selections*/
