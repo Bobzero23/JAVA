@@ -21,7 +21,7 @@ public class tic_tac_toe {
 					{'-', '+', '-', '+', '-'}, 
 					{' ', '|', ' ', '|', ' '}, 
 					{'-', '+', '-', '+', '-'}, 
-					{' ', '|', ' ', '|', ' '}};
+					{' ', '|', ' ', '|', ' '}};  
 			
 			/*this will print the gameBoar at the beggining*/
 			print_game_board(gameBoard);
@@ -134,6 +134,12 @@ public class tic_tac_toe {
 			break;
 		
 		}
+	}
+	
+	/*a method to check the winner*/
+	public static String checkWinner() {
+		List TopRow = Arrays.asList(1, 2, 3);
+		return "";
 	}
 
 }
