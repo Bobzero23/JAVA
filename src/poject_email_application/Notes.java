@@ -1,4 +1,4 @@
-package poject_Email_application;
+package poject_email_application;
 
 /* OUR APPLICATION SHALL DO THE FOLLOWINGS
  * + generate an email using the following syntax firstname.lastname@department.company.coms

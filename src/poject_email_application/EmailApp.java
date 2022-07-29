@@ -1,4 +1,4 @@
-package poject_Email_application;
+package poject_email_application;
 
 public class EmailApp {
 
