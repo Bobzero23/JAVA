@@ -107,4 +107,11 @@ public class Email {
 	public String getPasssword() {
 		return password;
 	}
+	
+	/*method to display all the info we have*/
+	public String showInfo() {
+		return  "\nFull name: " + firstName + " " + lastName
+				+ "\n" + "Company Email is : " + email
+				+ "\n" + "Mailbox Capacity is : " + mailboxCapacity ;
+	}
 }
