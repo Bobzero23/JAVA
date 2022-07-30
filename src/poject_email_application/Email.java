@@ -112,6 +112,6 @@ public class Email {
 	public String showInfo() {
 		return  "\nFull name: " + firstName + " " + lastName
 				+ "\n" + "Company Email is : " + email
-				+ "\n" + "Mailbox Capacity is : " + mailboxCapacity ;
+				+ "\n" + "Mailbox Capacity is : " + mailboxCapacity + "mb" ;
 	}
 }
