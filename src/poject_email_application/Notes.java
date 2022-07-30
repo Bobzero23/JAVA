@@ -12,6 +12,7 @@ package poject_email_application;
  *
  * so it is possible to have a method with String return type and int parameter
  * 
+ * in setMailboxCapacity method we used encapsulation to hide the keyword 
  *
  *
  */
