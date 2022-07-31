@@ -12,7 +12,7 @@ public class Student {
 	private int gradeYear;
 	private String studentID;
 	private String courses;
-	private int tuitionBalance;
+	private int tuitionBalance = 0;
 	private static int costOfCourse = 600;
 	private static  int id = 1000; 
 	
@@ -39,7 +39,7 @@ public class Student {
 		
 		/*displaying the results*/
 		System.out.println(firstName + " "+ lastName + " " + gradeYear + " " + studentID);
-	
+		
 	
 	}
 	
@@ -52,7 +52,33 @@ public class Student {
 		/*making student id*//*greade level + id*/
 		this.studentID = gradeYear + "" + id;
 	}
+
 	/*enroll new courses*/
+	public void enroll() {
+	
+		do {
+			
+			/*ask user what to course they wanna enroll or to enter Q to quit */
+			System.out.print("Enter course to enroll.. (Q - to quit: )");
+			Scanner scan = new Scanner (System.in);
+			String course = scan.nextLine();
+			
+			/*our condition*/
+			if(!course.equals("Q")) {
+				courses = courses + "\n" + course;
+				tuitionBalance = tuitionBalance + costOfCourse;	
+			}else {
+				System.out.println("BREAK!");
+				break;
+			}
+		
+			
+		}while (1 != 0);
+
+		System.out.println("ENROLLED IN: " + courses);
+		System.out.println("TUITION BALANCE: " + tuitionBalance);
+	}
+	
 	/*view balance*/
 	/*pay tuition*/
 	/*show status*/

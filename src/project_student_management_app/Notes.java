@@ -11,7 +11,7 @@
 /* when we creat somethign static we make it like the same of all objects
  * is not like it belongs to a particular method or user it is  for all object infact it belongs to the class
  *
- *
+ * is better to use equals method when you put string the conditions
  *
  *
  */
