@@ -11,7 +11,7 @@ public class Student {
 	private String lastName;
 	private int gradeYear;
 	private String studentID;
-	private String courses;
+	private String courses = "";
 	private int tuitionBalance = 0;
 	private static int costOfCourse = 600;
 	private static  int id = 1000; 
@@ -36,10 +36,6 @@ public class Student {
 		
 		/*calling the setStudentId method*/
 		setStudentId();
-		
-		/*displaying the results*/
-		System.out.println(firstName + " "+ lastName + " " + gradeYear + " " + studentID);
-		
 	
 	}
 	
@@ -74,8 +70,6 @@ public class Student {
 			
 		}while (1 != 0);
 
-		System.out.println("ENROLLED IN: " + courses);
-		System.out.println("TUITION BALANCE: " + tuitionBalance);
 	}
 	
 	/*view balance*/
@@ -90,8 +84,14 @@ public class Student {
 		System.out.println("Enter your payment: $");
 		int payment = scan.nextInt();
 		tuitionBalance = tuitionBalance - payment;
-		System.out.println("Thank you for your payment $" + payment);
-		viewBalance();
+		System.out.println("Thank you for your payment $" + payment + "\n");
+		
 	}
 	/*show status*/
+	public String showStatus() {
+		return "FULL NAME: " + firstName + " " + lastName + "\n"
+				+ "ID: " + studentID + "\n\n"
+						+ "COURSE ENROLLED: " + courses + "\n"
+								+ "TUITION BALANCE: " + tuitionBalance;
+	}
 }

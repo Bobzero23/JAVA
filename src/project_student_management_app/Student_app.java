@@ -10,7 +10,7 @@ public class Student_app {
 		Student student = new Student();
 		student.enroll();
 		student.payTuition();
-		
+		System.out.println(student.showStatus());
 		/*ask how many many new users we want to add*/
 		/*create n number of new student*/
 		
