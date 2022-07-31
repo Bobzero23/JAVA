@@ -10,7 +10,7 @@ public class Student {
 	private String firstName;
 	private String lastName;
 	private int gradeYear;
-	private int studentID;
+	private String studentID;
 	private String courses;
 	private int tuitionBalance;
 	private static int costOfCourse = 600;
@@ -34,15 +34,24 @@ public class Student {
 				+ "4 - for senior ");
 		this.gradeYear = scan.nextInt();
 		
+		/*calling the setStudentId method*/
+		setStudentId();
+		
 		/*displaying the results*/
-		System.out.println(firstName + " "+ lastName + " " + gradeYear);
+		System.out.println(firstName + " "+ lastName + " " + gradeYear + " " + studentID);
 	
-		/*everytime we create a new student we increment id by one*/
-		id++;
 	
 	}
 	
 	/*generate an ID*/
+	public void setStudentId() {
+		
+		/*everytime we create a new student we increment id by one*/
+		id++;
+		
+		/*making student id*//*greade level + id*/
+		this.studentID = gradeYear + "" + id;
+	}
 	/*enroll new courses*/
 	/*view balance*/
 	/*pay tuition*/
