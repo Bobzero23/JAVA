@@ -1,7 +1,8 @@
 package super_keyword;
-/*super keyword inatumika kutoa confusion wakati unatumia superclass na subclass*/
-/** every consturctor has a super method by default*/
-/*by passing the parameter to our super method we decide which constructor to call*/
+
+/*SUPER KEYWORD --> It is used to call superclass methods, and to access the superclass constructor.
+The most common use of the super keyword is to eliminate the confusion between
+superclasses and subclasses that have methods with the same name.*/
 
 /*First Example class*/
 class Mother{
