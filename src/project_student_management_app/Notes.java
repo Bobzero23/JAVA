@@ -12,6 +12,8 @@
  * is not like it belongs to a particular method or user it is  for all object infact it belongs to the class
  *
  * is better to use equals method when you put string the conditions
+ * 
+ * so everytime you use a scanner inside a method you must recreate the object
  *
  *
  */

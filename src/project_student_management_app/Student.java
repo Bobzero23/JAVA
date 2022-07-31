@@ -68,7 +68,6 @@ public class Student {
 				courses = courses + "\n" + course;
 				tuitionBalance = tuitionBalance + costOfCourse;	
 			}else {
-				System.out.println("BREAK!");
 				break;
 			}
 		
@@ -80,6 +79,19 @@ public class Student {
 	}
 	
 	/*view balance*/
+	public void viewBalance() {
+		System.out.println("Your new balance is: $" + tuitionBalance);
+	}
+	
 	/*pay tuition*/
+	@SuppressWarnings("resource")
+	public void payTuition() {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter your payment: $");
+		int payment = scan.nextInt();
+		tuitionBalance = tuitionBalance - payment;
+		System.out.println("Thank you for your payment $" + payment);
+		viewBalance();
+	}
 	/*show status*/
 }

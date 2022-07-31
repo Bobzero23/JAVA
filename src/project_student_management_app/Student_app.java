@@ -9,6 +9,7 @@ public class Student_app {
 		/*creating object of the student class*/
 		Student student = new Student();
 		student.enroll();
+		student.payTuition();
 		
 		/*ask how many many new users we want to add*/
 		/*create n number of new student*/
