@@ -97,8 +97,22 @@
  * just make sure you dont forget it, coz it wont be fun anymore
  * GET THE KEYS
  * go the folder which keys are located then copy the public key
+ * GET AUTHENTICATED WITH THE KEYS
+ * go to git hub--> settings --> generate new keys --> paste the key there and generate
+ * CHECK IF THE KEYS ARE WORKING WELL 
+ * <ssh -T git@github.com> then you will say yes and then yes
+ * you might wanted to enter the passphrase if you have one
+ * ---> I really dont know how to work with these ssh perfectly but anyway Imma learn it by the time you read this
  * 
- *
+ * CLONE A REPOSITORY FROM GIT HUB
+ * + go to github and create a repo there 
+ * + get the copy ssh url
+ * + now go the gitbash/git command line then enter the folder you want the clone to be in 
+ * <git clone <paste the ssh url here>> this the command to clone the repository
+ * you might be asked to enter some passphrase if you have then you are all done
+ * 
+ * CHECK THE LOCAL REPO
+ * <ls -ltr> this command will show you all the available repo in your current folder
  *
  *
  */
