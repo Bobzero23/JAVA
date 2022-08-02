@@ -29,10 +29,38 @@ public class MyFrame extends JFrame {
 		timeFormat = new SimpleDateFormat("hh:mm:ss a");
 		timeLabel = new JLabel();
 		
-		time = timeFormat.format(Calendar.getInstance().getTime());
-		
+		/*adding time label to the frame*/
+		this.add(timeLabel);
 		this.setVisible(true);
-		
+
+		/*calilng a setTime method*/
+		setTime();
 	}
 
+	/*method to update the second for every passing second*/
+	public void setTime() {
+
+		while(true) {
+
+			/*here we pass time the time infos using String format method*/
+			time = timeFormat.format(Calendar.getInstance().getTime());
+			
+			/*setting time on our time label*/
+			timeLabel.setText(time);
+			
+			/*adding some components to our lable*/
+			timeLabel.setFont(new Font("Algerian", Font.PLAIN, 50)); //FONT
+			timeLabel.setForeground(new Color(0,0,255)); //FONT COLOR
+			
+			/*this will handle the second updating*/
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			
+		}
+
+	}
+	
 }
