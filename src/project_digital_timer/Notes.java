@@ -5,9 +5,7 @@
  * to update the second in our setTime method we use while loop which shall update the second in each every second
  * but for that we used the THREAT inside the for loop to decide when to update like after every seconds
  * 
- * <"Algerian"> this font is kinda dope tho
- * 
- * 
+ * <"Algerian"> and <"Broadway"> this are kinda my fav fonts
  * 
  */
  

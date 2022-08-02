@@ -10,8 +10,11 @@ public class MyFrame extends JFrame {
 
 	/*creating instances*/
 	Calendar calendar;
-	SimpleDateFormat timeFormat;
+	SimpleDateFormat timeFormat; //FOR THE TIME
 	JLabel timeLabel;
+	SimpleDateFormat dayFormat; //FOR THE DAY 
+	JLabel dayLabel;
+	String day;
 	String time;
 	
 	/*cosntructor*/
@@ -22,17 +25,34 @@ public class MyFrame extends JFrame {
 		this.setTitle("My clock project");
 		this.setLayout(new FlowLayout());
 		this.setSize(350,200);
+		this.getContentPane().setBackground(Color.black);
 		this.setResizable(false);
 		this.setLocationRelativeTo(null);
 		
 		/*intialization*/
-		timeFormat = new SimpleDateFormat("hh:mm:ss a");
-		timeLabel = new JLabel();
+		timeFormat = new SimpleDateFormat("hh:mm:ss a"); //FOR TIME
+		timeLabel = new JLabel(); // FOR TIME
+		dayFormat = new SimpleDateFormat("dd:MM:y"); // FOR DAY 
+		dayLabel = new JLabel(); // FOR DAY
+		
+		/*adding some components to our timelable*/
+		timeLabel.setFont(new Font("Algerian", Font.PLAIN, 50)); //FONT
+		timeLabel.setForeground(new Color(0,0,255)); //FONT COLOR
+		timeLabel.setBackground(Color.black); //BAKCGROUND COLOR
+		timeLabel.setOpaque(true);
+		
+		/*adding some components to our daylable*/
+		dayLabel.setFont(new Font("Broadway", Font.PLAIN, 35)); //FONT
+		dayLabel.setForeground(new Color(0,0,255)); //FONT COLOR
+		dayLabel.setBackground(Color.black); //BAKCGROUND COLOR
+		dayLabel.setOpaque(true);
 		
 		/*adding time label to the frame*/
 		this.add(timeLabel);
+		this.add(dayLabel);
 		this.setVisible(true);
 
+		
 		/*calilng a setTime method*/
 		setTime();
 	}
@@ -42,15 +62,15 @@ public class MyFrame extends JFrame {
 
 		while(true) {
 
-			/*here we pass time the time infos using String format method*/
+			/*here we passthe time infos to the time string using String format method*/
 			time = timeFormat.format(Calendar.getInstance().getTime());
-			
 			/*setting time on our time label*/
 			timeLabel.setText(time);
-			
-			/*adding some components to our lable*/
-			timeLabel.setFont(new Font("Algerian", Font.PLAIN, 50)); //FONT
-			timeLabel.setForeground(new Color(0,0,255)); //FONT COLOR
+	
+			/*here we pass the day infos to the day string using String format method*/
+			day = dayFormat.format(Calendar.getInstance().getTime());
+			/*setting time on our time label*/
+			dayLabel.setText(day);
 			
 			/*this will handle the second updating*/
 			try {
