@@ -6,6 +6,7 @@ import java.awt.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+@SuppressWarnings("serial")
 public class MyFrame extends JFrame {
 
 	/*creating instances*/

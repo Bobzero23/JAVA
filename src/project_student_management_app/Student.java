@@ -20,6 +20,7 @@ public class Student {
 	public Student() {
 		
 		/*creating a scanner object*/
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
 		/*getting info from the user*/
@@ -56,6 +57,7 @@ public class Student {
 			
 			/*ask user what to course they wanna enroll or to enter Q to quit */
 			System.out.print("Enter course to enroll.. (Q - to quit: )");
+			@SuppressWarnings("resource")
 			Scanner scan = new Scanner (System.in);
 			String course = scan.nextLine();
 			
