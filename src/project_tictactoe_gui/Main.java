@@ -1,4 +1,4 @@
-package tictactoe;
+package project_tictactoe_gui;
 
 public class Main {
 

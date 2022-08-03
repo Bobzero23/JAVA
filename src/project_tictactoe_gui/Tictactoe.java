@@ -1,4 +1,4 @@
-package tictactoe;
+package project_tictactoe_gui;
 
 /*must imports*/
 import java.util.*;
@@ -36,9 +36,14 @@ public class Tictactoe implements ActionListener{
 		textfield.setOpaque(true);
 		
 		title_panel.setLayout(new BorderLayout());
-		title_panel.add(textfield);
-		frame.add(title_panel);
+		title_panel.setBounds(0, 0, 800, 100);
 		
+		button_panel.setLayout(new GridLayout(3, 3));
+		button_panel.setBackground(new Color(234, 245, 52));
+		
+		title_panel.add(textfield);
+		frame.add(title_panel, BorderLayout.NORTH);
+		frame.add(button_panel);
 		
 		frame.setVisible(true);
 		
