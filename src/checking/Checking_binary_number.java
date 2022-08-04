@@ -32,7 +32,7 @@ public class Checking_binary_number {
 			if (p % 10 > 1) {
 				return false;
 			}
-			/*I really didnt understanda this*/
+			/*I really didn't understand this*/
 			p = p / 10;
 		}
 		return true;
