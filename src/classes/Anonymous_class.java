@@ -2,8 +2,6 @@ package classes;
 /*MARA NYINIG HUTUMIKA NDANI YA MAIN METHOD KAMA UNATAKA PALE UNAPOTAKA KUCALL 
  * METHOD YA CLASS AMBAYO UMECREATE ILA UNATAKA IFANYE KAZI NYENGINE*/
 
-//practice
-
 
 /*main class*/
 public class Anonymous_class {
