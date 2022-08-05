@@ -1,5 +1,6 @@
 package project_tictactoe_gui;
 
+/*main class*/
 public class Main {
 
 	@SuppressWarnings("unused")
