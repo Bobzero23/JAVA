@@ -87,6 +87,8 @@ public class Demo {
 		Field field_object = class_object.getDeclaredField("name");
 		
 		/*setting the field accessible usign object and setAccessible boolean method*/
+		
+		
 		/*this method will set the field accessbie even tho it was private */
 		/*not that our field is accessible we concatnate it with another string using set method*/
 		/*again creating object of method and passing in the name of the object 
