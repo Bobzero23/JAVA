@@ -1,11 +1,12 @@
 package colection_and_generics;
+
 /*WE WILL SEE HOW TO USE COLLECTION ALONG WITH ITERATOR*/
-/*SINCE THAT COLLECTIO DOESNT WORK WITH INDEX IS HARD TO PRINT ONE BY ONE
+
+/*SINCE THAT COLLECTION DOESNT WORK WITH INDEX IS HARD TO PRINT ONE BY ONE
  * THATS WHY WE GONNA HAVE TO USE ITERATOR 
+ * 
  * NOTE
  * Iterator is a class and iterator is a method*/
-
-
 
 /*needed imports*/
 import java.util.*;
@@ -41,10 +42,6 @@ public class Collection_Demo {
 		while(it.hasNext()) {
 			System.out.println(it.next());
 		}
-		
-		
-		
-		
 		
 	}
 
