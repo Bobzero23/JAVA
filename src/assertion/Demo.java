@@ -5,7 +5,7 @@ package assertion;
 /*main class*/
 public class Demo {
 
-	/*main derived method*/
+	/*main derived method*/ 
 	public static void main(String[] args) {
 
 		/*initializing a variable*/
