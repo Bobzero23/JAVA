@@ -1,5 +1,5 @@
 package colection_and_generics;
-/*WE WILL SEE HOW TO USE COMPARABLE INTERFACE*/
+/*WE WILL SEE HOW TO USE COMPARABLE INTERFACE*/ 
 
 /*needed imports*/
 import java.util.*;
