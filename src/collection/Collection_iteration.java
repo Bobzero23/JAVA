@@ -1,8 +1,6 @@
 package collection;
 
-
-
-public class Collection {
+public class Collection_iteration {
 
 	public static void main(String[] args) {
 	
