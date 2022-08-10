@@ -1,4 +1,4 @@
-package collection;
+package collection_interface;
 
 /*There are many ways of iteratin a collection but this one is what I prefer*/
 

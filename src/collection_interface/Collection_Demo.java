@@ -1,4 +1,4 @@
-package collection;
+package collection_interface;
 
 /*WE WILL SEE HOW TO USE COLLECTION ALONG WITH ITERATOR*
 
