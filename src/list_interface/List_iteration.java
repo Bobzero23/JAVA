@@ -40,7 +40,7 @@ public class List_iteration {
 		/*returning the hashcode of the list*/
 		System.out.println("The hash code of the list is: " + list.hashCode());
 		
-		/*checking if the list is empty or not*/
+		/*checking if the list is empty or not*/ 
 		System.out.println(list.isEmpty());
 	
 	}
