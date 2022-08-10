@@ -27,13 +27,30 @@ public class List_demo {
 		List<Integer> list2 = new ArrayList<>();
 		
 		/*adding three elements to the list */
-		/*addint the second list to be the first indext of first list using addAll method*/
+		list2.add(1);
+		list2.add(2);
+		list2.add(3);
+		
+		/*adding the second list to be the first indext of first list using addAll method*/
+		list1.addAll(1, list2);
+		
 		/*displaying the first list*/
+		System.out.println(list1);
+		
 		/*removing the elements of the index 1 of the first list*/
+		list1.remove(1);
+		
 		/*displaying the list*/
+		System.out.println(list1);
+		
 		/*displaying only the third index of the first list using get method*/
+		System.out.println(list1.get(3));
+		
 		/*setting the zero index element as 5*/
+		list1.set(0, 5);
+		
 		/*displaying the list (first list)*/
+		System.out.println(list1);
 		
 		
 	}
