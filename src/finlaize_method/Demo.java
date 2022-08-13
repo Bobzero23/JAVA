@@ -3,7 +3,7 @@ package finlaize_method;
 /*This is called to dispose of System resource, to clean up activities and minimize memory leaks
  * in this code you will see that this method is called right after the garbage collection is done*/
 
-/*main class*/
+/*main class*/ 
 public class Demo {
 
 	/*main driver method*/
