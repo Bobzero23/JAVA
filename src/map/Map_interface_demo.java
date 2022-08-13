@@ -1,6 +1,8 @@
 package map;
 
-/*Map as the name refers, it represents mapping between key and value tho it can't contain duplicate values*/
+/*Map as the name refers, it represents mapping between key and value
+ *  tho it can't contain duplicate values, hashmap wont maintain the order of it*/
+
 
 /*must import*/
 import java.util.*;
