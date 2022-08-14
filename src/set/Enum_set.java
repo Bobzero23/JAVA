@@ -19,7 +19,7 @@ public class Enum_set {
 		day = EnumSet.of(DAY.MONDAY, DAY.TUESDAY, DAY.WEDNESDAY, DAY.THURSDAY, DAY.FRIDAY, DAY.SATURDAY, DAY.SUNDAY);
 		
 		/*displaying the set*/
-		System.out.println("This is our Enum set: " + day);
+		System.out.println("This is our Enum set: " + day); 
 		
 	}
 
