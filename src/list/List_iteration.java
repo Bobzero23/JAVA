@@ -1,4 +1,4 @@
-package list_interface;
+package list;
 
 /*In this code we gonna see how to iterate a list using for loop and get method*/
 

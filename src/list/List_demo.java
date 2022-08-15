@@ -1,4 +1,4 @@
-package list_interface;
+package list;
 
 /*The List interface in Java provides a way to store the ordered collection
  * it allows duplicate and it supports poisitional insertion and access
