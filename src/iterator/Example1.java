@@ -23,7 +23,7 @@ public class Example1 {
 		foods.add("Chicken");
 		foods.add("Rice");
 		
-		/*now lets loop thro the arraylist using iterator*/
+		/*now lets loop through the arraylist using iterator*/
 		Iterator<String> it = foods.iterator();
 		
 		/*I used while loop to check if there is somethng to display*/
