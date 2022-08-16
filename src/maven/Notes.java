@@ -41,5 +41,4 @@
  * open the command line in the target folder
  * then write java -cp theNameOfTheJarFile TheNameOfThePackage.TheNameOfTheClass
  * 
- * 
  */
