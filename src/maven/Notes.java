@@ -36,5 +36,10 @@
  * install = installing the package to the local repository
  * deploy = simply pushing your work to the remote repository
  * 
+ * RUNNING THE JAVA CODE INSIDE THE MAVEN
+ * simply after you get the jar file by packaging your code
+ * open the command line in the target folder
+ * then write java -cp theNameOfTheJarFile TheNameOfThePackage.TheNameOfTheClass
+ * 
  * 
  */
