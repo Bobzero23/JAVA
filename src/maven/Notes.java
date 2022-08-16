@@ -25,5 +25,16 @@
  * after that they will ask you to confirm just type Y and then click enter
  * after you done all of this steps the project will be created inside the folder you opened command line
  * 
+ * MAVEN LIFE CYCLE
+ * there are some commands we gonna see in here but again make sure you are inside a particular folder for this
+ * oppen a command line and these are the commands you can use
+ * validate = simply validating the folder or project and neccessary file and informations
+ * compile = compiles the source code of the project
+ * test = testing the compiled code 
+ * package = takes the compiled code and package it in a suitable format ex. JAR
+ * verify = simply verifying to see if everythin is as expected 
+ * install = installing the package to the local repository
+ * deploy = simply pushing your work to the remote repository
+ * 
  * 
  */
