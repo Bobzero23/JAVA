@@ -91,7 +91,7 @@ local.properties
  * now go the repo project file and commit */
 
 /*COMMIT TO GITHUB or PUSH
- * go to githumb and create the repo with same name with local repo you wanna push
+ * go to github and create the repo with same name with local repo you wanna push
  * then copy the http url of it 
  * then go to eclipse right click the local repo with the same name you created on github
  * say push then paste the http link you copied from github
