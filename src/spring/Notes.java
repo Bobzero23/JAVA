@@ -24,6 +24,20 @@
  * ADVANTAGE OF IoC AND DI
  * Loose coupling -> is like a developer who's working with a desktop and the other who's working with a lap
  * 
+ * BEANS
+ * is just same as POJO but this one is from the Spring Framework
+ * 
+ * IoC Container
+ * IoC Container manages the life cycle of the Bean and Injecting any required dependencies
+ * There are two types of IoC Container
+ * + Application Context -> This one is more Advanced
+ * + Bean Factory -> This one is more like Basic
+ * 
+ * CONTEXT
+ * Is where all the bean Objects are present when they are created
+ * 
+ * SpEL
+ * Spring Expression Language is the language we use for manipulating all the objects and stuff you know..
  * 
  * 
  * 
