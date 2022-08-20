@@ -15,8 +15,15 @@
  * Spring Intergration: if you want application to send a message to another application..
  * Srping AMQP: If you have intentions of using messaging ques...
  * 
- * IoC (INVENTOIN OF CONTROL)
+ * IoC (INVERSOIN OF CONTROL)
  * Simply instead of a Programmer controlling the flow of the program the Frame work will control the flow
+ * 
+ * DEPENDENCY INJECTOIN 
+ * is the patter through which IoC is achieved
+ * 
+ * ADVANTAGE OF IoC AND DI
+ * Loose coupling -> is like a developer who's working with a desktop and the other who's working with a lap
+ * 
  * 
  * 
  * 
