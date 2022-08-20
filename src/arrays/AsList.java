@@ -1,7 +1,5 @@
 package arrays;
 
-/*making some changes*/
-/*another change just to be sure*/
 /*HERE WE GONNA SEE HOW TO US asList*/
 
 /*this returns a fixed-size list backed by array*/
