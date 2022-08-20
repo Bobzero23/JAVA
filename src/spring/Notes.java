@@ -11,6 +11,13 @@
  * Sprin Data: for dealing with databases
  * Spring Cloud: for working with platforms like Docker etc.
  * Spring Security: for security
+ * Spring Session: If you are working with Session based business..
+ * Spring Intergration: if you want application to send a message to another application..
+ * Srping AMQP: If you have intentions of using messaging ques...
+ * 
+ * IoC (INVENTOIN OF CONTROL)
+ * Simply instead of a Programmer controlling the flow of the program the Frame work will control the flow
+ * 
  * 
  * 
  */
