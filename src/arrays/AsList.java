@@ -6,7 +6,7 @@ package arrays;
 
 /*must imports*/
 import java.util.*;
-/*just checking*/
+
 /*main class*/
 public class AsList {
 
