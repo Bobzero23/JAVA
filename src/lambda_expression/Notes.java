@@ -3,5 +3,5 @@
 * for that particular abstract method, ir reduce more lines of codes and makes the coding easier
 *
 * Note: abstract method won't have a body but can have parameters
-*
+*       lambda operators can be, 0 parameter, 1 parameter or 2 parameter.
 * */
