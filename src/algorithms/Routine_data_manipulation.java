@@ -1,13 +1,14 @@
 package algorithms;
 
-/*THIS CODE IS COPIED FROM ONLINE BCOZ I DIDNT HAVE TO WRITE ALL OF THIS FOR GOD SAKE*/
+/*THIS CODE IS COPIED FROM ONLINE BCOZ I DIDN'T HAVE TIME TO WRITE ALL OF THIS FOR GOD’S SAKE*/
 
 import java.util.Collections;
 import java.util.ArrayList;
 
-public class Routine_data_manupulatio {
+public class Routine_data_manipulation {
 
 	    public static void main(String[] args) {
+
 	        // Creating an ArrayList
 	        ArrayList<Integer> numbers = new ArrayList<>();
 	        numbers.add(1);

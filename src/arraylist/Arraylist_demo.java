@@ -1,6 +1,6 @@
 package arraylist;
 
-/*It is risizable array, this one is also one of class of collection*/
+/*It is resizable array, this one is also one of class of collection*/
 
 /*must imports*/
 import java.util.*;
@@ -48,7 +48,7 @@ public class Arraylist_demo {
 		/*checking if the arraylist contains a particular object*/
 		System.out.println(bag.contains("Dog"));
 		
-		/*getting a particulat object from arraylist using its index*/
+		/*getting a particular object from arraylist using its index*/
 		System.out.println(bag.get(4));
 		
 		/*removing a particular object from the arraylist*/

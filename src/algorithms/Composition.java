@@ -2,7 +2,7 @@ package algorithms;
 
 /*in this code we gonna implement two methods
  * 1. frequency() returns how many times a particular element appear in the collection
- * 2. disjoint() boolean method to check if ther are common elements*/
+ * 2. disjoint() boolean method to check if there are common elements*/
 
 /*imports*/
 import java.util.*;
@@ -10,7 +10,7 @@ import java.util.*;
 /*main class*/
 public class Composition {
 
-	/*mian method*/
+	/*main method*/
 	public static void main(String[] args) {
 
 		/*creating object of the first arraylist*/
@@ -27,9 +27,9 @@ public class Composition {
 		
 		/*using the frequency method*/
 		int i = Collections.frequency(coll1, 2);
-		System.out.println("The number 2 appers " + i + " times");
+		System.out.println("The number 2 appears " + i + " times");
 		
-		/*creating obeject of the second arraylist*/
+		/*creating object of the second arraylist*/
 		ArrayList<Integer> coll2 = new ArrayList<>();
 		
 		/*adding some elements into it*/

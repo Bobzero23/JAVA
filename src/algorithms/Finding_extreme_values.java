@@ -1,6 +1,6 @@
 package algorithms;
 
-/*This is how to find the maximum and the minumum values in the collectoin*/
+/*This is how to find the maximum and the minimum values in the collection*/
 
 /*imports*/
 import java.util.*;
@@ -11,7 +11,7 @@ public class Finding_extreme_values {
 	/*main method*/
 	public static void main(String[] args) {
 
-		/*creaeting object of the Arraylist*/
+		/*creating object of the Arraylist*/
 		ArrayList<Integer> ints = new ArrayList<>();
 
 		/*adding some elements into it*/
@@ -23,7 +23,7 @@ public class Finding_extreme_values {
 		ints.add(6);
 		
 		/*displaying the minimum value of the collection*/
-		System.out.println("The minumum value is: " + Collections.min(ints));
+		System.out.println("The minimum value is: " + Collections.min(ints));
 
 		/*displaying the maximum value of the collection*/
 		System.out.println("The maximum value is: " + Collections.max(ints));
