@@ -1,6 +1,6 @@
 package project_atm;
 
-
+/*imports*/
 import java.io.IOException;
 
 public class ATM {

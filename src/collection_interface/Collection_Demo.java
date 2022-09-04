@@ -14,11 +14,11 @@ import java.util.*;
 /*main class*/
 public class Collection_Demo {
 
-	/*main method*/ /*suppressing some waringings*/
+	/*main method*/ /*suppressing some warnings*/
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
 
-		/*lets create a collection object here*/
+		/*let's create a collection object here*/
 		Collection values = new ArrayList();
 		
 		/*adding some values*/
