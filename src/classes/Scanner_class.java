@@ -1,6 +1,8 @@
 package classes;
+
 //import scanner class
 import java.util.Scanner;
+
 // class
 public class Scanner_class {
 	//main method

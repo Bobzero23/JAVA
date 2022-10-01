@@ -19,7 +19,7 @@ public class OptionMenu extends Account{
 	/*storing data of account and pin mapping*/
 	HashMap <Integer, Integer> data = new HashMap <Integer, Integer>();
 	
-	/*a method for loging in*/
+	/*a method for logging in*/
 	public void getLogin() throws IOException {
 		
 		int x = 1;

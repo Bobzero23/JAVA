@@ -307,7 +307,7 @@ public class Project1 implements ActionListener {
 		}
 	}
 
-	/*-----------------------------------------------ADDING INFORMATIONS TO THE TEXT AREA-------------------------------------*/
+	/*-----------------------------------------------ADDING INFORMATION TO THE TEXT AREA-------------------------------------*/
 	private void addInformation(String string) {
 		this.Textarea.append(string + "\n");
 
