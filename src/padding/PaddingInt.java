@@ -14,6 +14,7 @@ public class PaddingInt {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a positive number with 5 digits: ");
         int input = scan.nextInt();
+        scan.close();
         return String.format("%05d", input);
     }
 
