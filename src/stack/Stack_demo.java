@@ -29,7 +29,7 @@ public class Stack_demo {
 		/*displaying the top object*/
 		System.out.println(stack.peek());
 		
-		/*removing object from tshe stack*/
+		/*removing object from the stack*/
 		stack.pop();
 		
 		/*displaying the stack*/
