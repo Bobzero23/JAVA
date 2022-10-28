@@ -1,7 +1,7 @@
 package map;
 
 /*Map as the name refers, it represents mapping between key and value
- *  tho it can't contain duplicate values, hashmap wont maintain the order of it*/
+ *tho it can't contain duplicate values, hashmap won't maintain the order of it*/
 
 
 /*must import*/
@@ -14,7 +14,7 @@ public class Map_interface_demo {
 	/*main method*/
 	public static void main(String[] args) {
 
-		/*creatign object of a map*/
+		/*creating object of a map*/
 		Map<String, Integer> map = new HashMap<>();
 		
 		/*giving some objects to the map*/
@@ -30,7 +30,7 @@ public class Map_interface_demo {
 		}
 		
 		/*what happens if we display without for loop*/
-		/*it will display with no order but really it doesn't matter*/
+		/*it will display with no order, but really it doesn't matter*/
 		System.out.println(map);
 	}
 
