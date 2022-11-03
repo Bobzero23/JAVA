@@ -9,7 +9,7 @@ import java.util.*;
 /*creating a Demo class*/
 class Demo{
 
-	/*creating a to string method which returns demo*/
+	/*creating to string method which returns demo*/
 	public String toString() {
 		return "My name is ";
 	}
