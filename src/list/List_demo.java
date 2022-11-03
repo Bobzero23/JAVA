@@ -1,8 +1,8 @@
 package list;
 
 /*The List interface in Java provides a way to store the ordered collection
- * it allows duplicate and it supports poisitional insertion and access
- * classes that inherits list are arraylist, vector, stack and linkedlist*/
+ * it allows duplicate, and it supports positional insertion and access
+ * classes that inherits list are arraylist, vector, stack and linked-list*/
 
 /*must imports*/
 import java.util.*;
@@ -31,7 +31,7 @@ public class List_demo {
 		list2.add(2);
 		list2.add(3);
 		
-		/*adding the second list to be the first indext of first list using addAll method*/
+		/*adding the second list to be the first index of first list using addAll method*/
 		list1.addAll(1, list2);
 		
 		/*displaying the first list*/
