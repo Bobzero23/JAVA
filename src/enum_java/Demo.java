@@ -1,6 +1,6 @@
 package enum_java;
 
-/*here we gonna demostrate on how to use enums*/
+/*here we gonna demonstrate on how to use enums*/
 
 /*creating enum*/
 enum Day {
@@ -13,7 +13,7 @@ public class Demo {
 	/* creating enums object */
 	Day day;
 
-	/* creating a constructor which has parameter of enum and it is object */
+	/* creating a constructor which has parameter of enum, and its object*/
 	public Demo(Day day) {
 		this.day = day; // initializing
 	}
@@ -40,17 +40,11 @@ public class Demo {
 
 	/* main driver method */
 	public static void main(String[] args) {
-
 		/*creating a variable to hold the day*/
 		String var = "MONDAY";
 		
 		/*creating object of class*/
 		Demo object = new  Demo(Day.valueOf(var));
 		object.howIsDay();
-		
-		
-	
-		
 	}
-	
 }
