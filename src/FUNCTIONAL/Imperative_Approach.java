@@ -6,10 +6,10 @@ package FUNCTIONAL;
 import java.util.ArrayList;
 import java.util.List;
 
-import static FUNCTIONAL.Imperative_Example.Gender.FEMALE;
-import static FUNCTIONAL.Imperative_Example.Gender.MALE;
+import static FUNCTIONAL.Imperative_Approach.Gender.FEMALE;
+import static FUNCTIONAL.Imperative_Approach.Gender.MALE;
 
-public class Imperative_Example {
+public class Imperative_Approach {
     public static void main(String[] args) {
         List<Person> people = List.of(
                 new Person("Bobzero", MALE),
@@ -19,6 +19,7 @@ public class Imperative_Example {
                 new Person("Victoria", FEMALE)
         );
 
+        /*HERE IS HOW YOU USE THE IMPERATIVE APPROACH*/
         System.out.println("IMPERATIVE APPROACH");
         List<Person> females = new ArrayList<>();
 
@@ -31,11 +32,6 @@ public class Imperative_Example {
         for(Person female: females) {
             System.out.println(female);
         }
-
-        System.out.println("\nDECLARATIVE APPROACH");
-        people.stream()
-                .filter(person -> FEMALE.equals(person.gender))
-                .forEach(System.out::println);
     }
 
     static class Person {
