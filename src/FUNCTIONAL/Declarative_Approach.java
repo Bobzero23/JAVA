@@ -1,9 +1,11 @@
 package FUNCTIONAL;
 
-/*Example of the declarative approach*/
+/*Example of the declarative approach and how to use predicate*/
 
 /*imports*/
 import java.util.List;
+import java.util.function.Predicate;
+
 import static FUNCTIONAL.Declarative_Approach.Gender.FEMALE;
 import static FUNCTIONAL.Declarative_Approach.Gender.MALE;
 
@@ -23,7 +25,17 @@ public class Declarative_Approach {
         people.stream()
                 .filter(person -> MALE.equals(person.gender))
                 .forEach(System.out::println);
+
+        System.out.println("\n");
+
+        /*HERE IS HOW TO USER PREDICATE*/
+        Predicate<Person> PersonPredicate = person -> FEMALE.equals(person.gender);
+        people.stream()
+                .filter(PersonPredicate)
+                .forEach(System.out::println);
+
     }
+
 
     public static class Person {
         private final String name;
