@@ -19,6 +19,7 @@ public class Declarative_Approach {
                 new Person("Victoria", FEMALE)
         );
 
+        /*HERE IS HOW YOU USE THE DECLARATIVE APPROACH*/
         people.stream()
                 .filter(person -> MALE.equals(person.gender))
                 .forEach(System.out::println);
