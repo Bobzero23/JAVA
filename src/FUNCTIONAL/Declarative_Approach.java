@@ -1,6 +1,6 @@
 package FUNCTIONAL;
 
-/*Example of the declarative approach and how to use predicate*/
+/*Example of the declarative approach*/
 
 /*imports*/
 import java.util.List;
