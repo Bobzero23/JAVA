@@ -50,6 +50,6 @@ public class _Consumer {
         greetCostumerConsumer.accept(Bobzero);
 
         /*calling the bi consumer method*/
-        greetCostumerBiConsumer.accept(Bobzero, true);
+        greetCostumerBiConsumer.accept(Bobzero, false);
     }
 }
