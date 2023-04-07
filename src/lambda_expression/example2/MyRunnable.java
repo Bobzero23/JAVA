@@ -24,7 +24,7 @@ class Test {
         MyRunnable object1 = () -> System.out.println("what's up Bob");
         object1.run();
 
-        MyConsumer<String> object2 = (str) -> System.out.println(str);
+        MyConsumer<String> object2 = System.out::println;
         object2.accept("What's up Bro");
 
         MyPredicate object3 = (num) -> num > 0;
