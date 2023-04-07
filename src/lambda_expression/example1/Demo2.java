@@ -1,4 +1,4 @@
-package lambda_expression;
+package lambda_expression.example1;
 
 /*Demonstration on how to display an Arraylist using lambda expression*/
 
