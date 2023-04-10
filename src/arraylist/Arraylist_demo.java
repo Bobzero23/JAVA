@@ -52,7 +52,7 @@ public class Arraylist_demo {
 		System.out.println(bag.get(4));
 		
 		/*removing a particular object from the arraylist*/
-		bag.remove("Pen");
+		bag.remove("Gum");
 		
 		/*displaying the arraylist*/
 		System.out.println(bag);
