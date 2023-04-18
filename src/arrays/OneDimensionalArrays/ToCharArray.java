@@ -1,4 +1,4 @@
-package arrays;
+package arrays.OneDimensionalArrays;
 
 /**This is a very useful method if you want to get access of the characters in the string */
 

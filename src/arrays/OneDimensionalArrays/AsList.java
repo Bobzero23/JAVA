@@ -1,4 +1,4 @@
-package arrays;
+package arrays.OneDimensionalArrays;
 
 /*HERE WE GONNA SEE HOW TO US asList*/
 

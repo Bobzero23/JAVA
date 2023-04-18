@@ -1,4 +1,4 @@
-package arrays;
+package arrays.OneDimensionalArrays;
 
 /*HERE I AM GONNA TRY TO COPY AN ARRAY TO ANOTHER ARRAY*/
 
