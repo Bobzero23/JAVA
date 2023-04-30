@@ -1,4 +1,4 @@
-package FUNCTIONAL;
+package JAVA_8.functional_interface;
 
 /*Example of the imperative approach*/
 
@@ -6,8 +6,8 @@ package FUNCTIONAL;
 import java.util.ArrayList;
 import java.util.List;
 
-import static FUNCTIONAL.Imperative_Approach.Gender.FEMALE;
-import static FUNCTIONAL.Imperative_Approach.Gender.MALE;
+import static JAVA_8.functional_interface.Imperative_Approach.Gender.FEMALE;
+import static JAVA_8.functional_interface.Imperative_Approach.Gender.MALE;
 
 public class Imperative_Approach {
     public static void main(String[] args) {

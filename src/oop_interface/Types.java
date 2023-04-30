@@ -2,11 +2,11 @@ package oop_interface;
 
 /*THER ARE THREE TYPES OF INTERFACES
  * ++ NORMAL - has more than one mthods
- * ++ SINGLE ABSTRACT METHOD - FUNCTIONAL INTERFACE - LAMBDA EXPRESSIO - has only one method
+ * ++ SINGLE ABSTRACT METHOD - JAVA_8.FUNCTIONAL INTERFACE - LAMBDA EXPRESSIO - has only one method
  * ++ MARKER INTERFACE - has no method at all*/
 
 
-            /*THIS IS AN EXAMPLE OF FUNCTIONAL INTERFACE*/
+            /*THIS IS AN EXAMPLE OF JAVA_8.FUNCTIONAL INTERFACE*/
 				/*AND WE WILL SEE LAMBDA EXPRESSION*/
 
 /*here is the interface*/

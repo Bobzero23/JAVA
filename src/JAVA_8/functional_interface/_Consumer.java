@@ -1,4 +1,4 @@
-package FUNCTIONAL;
+package JAVA_8.functional_interface;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
@@ -28,7 +28,7 @@ public class _Consumer {
         greetCostumerConsumer.accept(costumer1);
     }
 
-    /*USING CONSUMER FUNCTIONAL INTERFACE*/
+    /*USING CONSUMER JAVA_8.FUNCTIONAL INTERFACE*/
     static Consumer<Costumer> greetCostumerConsumer = costumer ->
             System.out.println("Hello " + costumer.costumerName + ", Thank you for registering phone number "
             + costumer.costumerPhoneNumber);

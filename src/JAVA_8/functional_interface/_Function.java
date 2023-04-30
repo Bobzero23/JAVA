@@ -1,4 +1,4 @@
-package FUNCTIONAL;
+package JAVA_8.functional_interface;
 
 /*EXAMPLE ON HOW TO USE JAVA UTIL FUNCTIONS*/
 

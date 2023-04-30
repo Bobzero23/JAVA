@@ -1,4 +1,4 @@
-package FUNCTIONAL;
+package JAVA_8.functional_interface;
 
 /*Example of the declarative approach*/
 
@@ -6,8 +6,8 @@ package FUNCTIONAL;
 import java.util.List;
 import java.util.function.Predicate;
 
-import static FUNCTIONAL.Declarative_Approach.Gender.FEMALE;
-import static FUNCTIONAL.Declarative_Approach.Gender.MALE;
+import static JAVA_8.functional_interface.Declarative_Approach.Gender.FEMALE;
+import static JAVA_8.functional_interface.Declarative_Approach.Gender.MALE;
 
 
 public class Declarative_Approach {
