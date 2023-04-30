@@ -1,4 +1,4 @@
-package streams;
+package JAVA_8.streams;
 
 import java.util.Arrays;
 import java.util.Comparator;

@@ -1,4 +1,4 @@
-package lambda_expression.example1;
+package JAVA_8.lambda_expression.example1;
 
 /*Demonstration on how you can use lambda expression*/
 
