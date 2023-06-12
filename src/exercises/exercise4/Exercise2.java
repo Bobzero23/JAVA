@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 
 public class Exercise2 {
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Button and Label Example");
+        JFrame frame = new JFrame("Counting");
         frame.setSize(500, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
