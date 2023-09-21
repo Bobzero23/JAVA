@@ -18,7 +18,7 @@ public class MyFrame extends JFrame {
 	String day;
 	String time;
 	
-	/*cosntructor*/
+	/*constructor*/
 	public MyFrame() {
 		
 		/*creating the frame with its components*/
@@ -27,25 +27,25 @@ public class MyFrame extends JFrame {
 		this.setLayout(new FlowLayout());
 		this.setSize(350,200);
 		this.getContentPane().setBackground(Color.black);
-		this.setResizable(false);
+		this.setResizable(true);
 		this.setLocationRelativeTo(null);
 		
-		/*intialization*/
+		/*initialization*/
 		timeFormat = new SimpleDateFormat("hh:mm:ss a"); //FOR TIME
 		timeLabel = new JLabel(); // FOR TIME
 		dayFormat = new SimpleDateFormat("dd:MM:y"); // FOR DAY 
 		dayLabel = new JLabel(); // FOR DAY
 		
-		/*adding some components to our timelable*/
+		/*adding some components to our time label*/
 		timeLabel.setFont(new Font("Algerian", Font.PLAIN, 50)); //FONT
 		timeLabel.setForeground(new Color(0,0,255)); //FONT COLOR
-		timeLabel.setBackground(Color.black); //BAKCGROUND COLOR
+		timeLabel.setBackground(Color.black); //BACKGROUND COLOR
 		timeLabel.setOpaque(true);
 		
 		/*adding some components to our daylable*/
 		dayLabel.setFont(new Font("Broadway", Font.PLAIN, 35)); //FONT
 		dayLabel.setForeground(new Color(0,0,255)); //FONT COLOR
-		dayLabel.setBackground(Color.black); //BAKCGROUND COLOR
+		dayLabel.setBackground(Color.black); //BACKGROUND COLOR
 		dayLabel.setOpaque(true);
 		
 		/*adding time label to the frame*/
@@ -54,7 +54,7 @@ public class MyFrame extends JFrame {
 		this.setVisible(true);
 
 		
-		/*calilng a setTime method*/
+		/*calling a setTime method*/
 		setTime();
 	}
 
@@ -63,7 +63,7 @@ public class MyFrame extends JFrame {
 
 		while(true) {
 
-			/*here we passthe time infos to the time string using String format method*/
+			/*here we pass the time infos to the time string using String format method*/
 			time = timeFormat.format(Calendar.getInstance().getTime());
 			/*setting time on our time label*/
 			timeLabel.setText(time);
